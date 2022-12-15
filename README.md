@@ -45,7 +45,7 @@ export function OtherComponent() {
 
 ## Credits
 
-By [Rafael de Lima Bordoni](github.com/eldskald).
+By [Rafael de Lima Bordoni](https://github.com/eldskald).
 
 ## License
 
