@@ -1,12 +1,12 @@
 import React, { useRef } from 'react';
-import { SubscribersContext } from '../contexts';
-import { SubscribersTable } from '../types';
+import { ObserversContext } from '../contexts';
+import { ObserversTable } from '../types';
 
 export function ObserverProvider(props: { children: React.ReactNode }) {
-  const ref = useRef<SubscribersTable>({});
+  const ref = useRef<ObserversTable>({});
   return (
-    <SubscribersContext.Provider value={{ subscribers: ref.current }}>
+    <ObserversContext.Provider value={{ observers: ref.current }}>
       {props.children}
-    </SubscribersContext.Provider>
+    </ObserversContext.Provider>
   );
 }

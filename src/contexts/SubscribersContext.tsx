@@ -1,6 +1,6 @@
 import { createContext } from 'react';
-import { SubscribersTable } from '../types';
+import { ObserversTable } from '../types';
 
-export const SubscribersContext = createContext<{
-  subscribers: SubscribersTable
-}>({ subscribers: {} });
+export const ObserversContext = createContext<{
+  observers: ObserversTable
+}>({ observers: {} });

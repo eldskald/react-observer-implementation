@@ -1,9 +1,9 @@
-export type Subscriber = (...args: any[]) => void;
+export type Observer = (...args: any[]) => void;
 
-export type SubscribersTable = {
-  [signal: string]: Subscriber[];
+export type ObserversTable = {
+  [event: string]: Observer[];
 };
 
-export type SignalSender<Args extends any[]> = (
+export type NotificationSender<Args extends any[]> = (
   ...args: Args
 ) => void;

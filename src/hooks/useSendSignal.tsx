@@ -1,15 +1,15 @@
 import { useContext } from 'react';
-import { SubscribersContext } from '../contexts';
-import { SignalSender } from '../types';
+import { ObserversContext } from '../contexts';
+import { NotificationSender } from '../types';
 
-export function useSendSignal<Args extends any[]>(signal: string) {
-  const { subscribers } = useContext(SubscribersContext);
+export function useSendSignal<Args extends any[]>(event: string) {
+  const { observers } = useContext(ObserversContext);
 
-  const sendSignal: SignalSender<Args> = (...args: Args) => {
-    if (subscribers[signal]) {
-      subscribers[signal].forEach((func) => func(...args));
+  const notify: NotificationSender<Args> = (...args: Args) => {
+    if (observers[event]) {
+      observers[event].forEach((func) => func(...args));
     }
   };
 
-  return sendSignal;
+  return notify;
 }
