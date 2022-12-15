@@ -2,7 +2,7 @@ import { useContext, useEffect, useRef } from 'react';
 import { ObserversContext } from '../contexts';
 import { Observer } from '../types';
 
-export function useSubscribe(
+export function useObserve(
   signal: string,
   func: Observer
 ) {

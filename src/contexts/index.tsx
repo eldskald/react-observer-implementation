@@ -1,1 +1,1 @@
-export * from './SubscribersContext';
+export * from './ObserversContext';

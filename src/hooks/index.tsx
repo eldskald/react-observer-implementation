@@ -1,2 +1,2 @@
-export * from './useSendSignal';
-export * from './useSubscribe';
+export * from './useNotify';
+export * from './useObserve';
