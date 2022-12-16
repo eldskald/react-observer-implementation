@@ -88,7 +88,7 @@ return (
 
 ## Demo
 
-Here is a [codesandbox demo](https://codesandbox.io/p/sandbox/react-observer-pattern-demo-b6hnhl) to showcase examples.
+Here is a [codesandbox demo](https://codesandbox.io/p/sandbox/react-observer-implementation-demo-b6hnhl) to showcase examples.
 
 ## Credits
 
