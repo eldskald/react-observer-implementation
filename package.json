@@ -3,7 +3,7 @@
   "description": "React implementation of the observer pattern",
   "author": "Rafael Bordoni (https://github.com/eldskald)",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "react",
     "typescript",
