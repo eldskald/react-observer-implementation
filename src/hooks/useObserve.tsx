@@ -4,19 +4,18 @@ import { Observer } from '../types';
 
 export function useObserve(
   event: string,
-  func: Observer
+  func: (...args: any[]) => void
 ) {
-  const { observers } = useContext(ObserversContext);
-  const index = useRef<number>(0);
+  const { observers, cleanUp } = useContext(ObserversContext);
+  const observerRef = useRef<Observer | null>(func)
 
   useEffect(() => {
-    if (observers[event]) {
-      observers[event].push(func);
-      index.current = observers[event].length - 1;
-    }
-
+    if (observers[event]) observers[event].push(observerRef);
+    else observers[event] = [observerRef];
+    
     return () => {
-      observers[event].splice(index.current, 1);
+      observerRef.current = null;
+      cleanUp();
     };
   }, []);
 }

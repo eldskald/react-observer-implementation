@@ -1,7 +1,7 @@
 export type Observer = (...args: any[]) => void;
 
 export type ObserversTable = {
-  [event: string]: Observer[];
+  [event: string]: { current: Observer | null }[];
 };
 
 export type NotificationSender<Args extends any[]> = (
