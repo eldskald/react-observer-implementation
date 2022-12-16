@@ -18,7 +18,8 @@
   "module": "./dist/main.es.js",
   "types": "./dist/main.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "exports": {
     ".": {
