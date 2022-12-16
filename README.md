@@ -1,4 +1,4 @@
-# react-observer-pattern
+# react-observer-implementation
 
 An implementation of the observer pattern on React.
 
