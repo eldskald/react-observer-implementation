@@ -9,6 +9,10 @@
     "typescript",
     "observer"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eldskald/react-observer-pattern"
+  },
   "type": "module",
   "main": "./dist/main.umd.js",
   "module": "./dist/main.es.js",
