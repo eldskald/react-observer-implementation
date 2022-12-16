@@ -14,7 +14,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/main.tsx'),
-      name: 'react-observer-pattern',
+      name: 'react-observer-implementation',
       formats: ['es', 'umd'],
       fileName: (format) => `main.${format}.js`,
     },

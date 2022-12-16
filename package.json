@@ -1,5 +1,5 @@
 {
-  "name": "react-observer-pattern",
+  "name": "react-observer-implementation",
   "description": "React implementation of the observer pattern",
   "author": "Rafael Bordoni (https://github.com/eldskald)",
   "license": "MIT",
@@ -7,11 +7,13 @@
   "keywords": [
     "react",
     "typescript",
-    "observer"
+    "observer",
+    "events",
+    "hooks"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eldskald/react-observer-pattern"
+    "url": "git+https://github.com/eldskald/react-observer-implementation"
   },
   "type": "module",
   "main": "./dist/main.umd.js",
